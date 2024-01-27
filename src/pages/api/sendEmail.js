@@ -6,7 +6,7 @@ const handler = async (req, res) => {
 
     switch (method) {
       case "POST": {
-        //Do some thing
+        //Do some thing~
         await sendMail(
           `Inquiry: ${subject}`,
           "oxygrowetawah@gmail.com",
