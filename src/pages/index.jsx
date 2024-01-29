@@ -86,6 +86,10 @@ const Index = ({ products }) => {
           href={`https://www.oxygrowagrotech.com/`}
           key="canonical"
         />
+        <meta
+          name="google-site-verification"
+          content="OoLc308xnUKs8w74epo2VMGY8eXAk4VvvXBBDeolmbo"
+        />
       </Head>
       <div className="container p-8 mx-auto">
         <div className="flex-row-reverse items-center justify-between my-8 transition-opacity duration-1000 ease-in-out opacity-100 animate-fade lg:flex">
