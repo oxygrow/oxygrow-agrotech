@@ -79,7 +79,7 @@ const Product = ({ product, relatedProducts }) => {
         <meta name="description" content={`${product?.shortdescription}`} />
         <link
           rel="canonical"
-          href={`https://www.oxygrowagrotech.com/products/${product?.path}`}
+          href={`https://oxygrowagrotech.com/products/${product?.path}`}
           key="canonical"
         />
       </Head>

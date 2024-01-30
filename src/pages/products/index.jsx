@@ -27,7 +27,7 @@ const products = ({ products }) => {
         />
         <link
           rel="canonical"
-          href={`https://www.oxygrowagrotech.com/products`}
+          href={`https://oxygrowagrotech.com/products`}
           key="canonical"
         />
       </Head>

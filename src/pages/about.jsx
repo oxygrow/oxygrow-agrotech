@@ -29,7 +29,7 @@ const about = () => {
         />
         <link
           rel="canonical"
-          href={`https://www.oxygrowagrotech.com/about`}
+          href={`https://oxygrowagrotech.com/about`}
           key="canonical"
         />
       </Head>

@@ -1,6 +1,6 @@
 import { getMatchedData } from "@/context/Firebase";
 
-const baseUrl = "https://www.oxygrowagrotech.com";
+const baseUrl = "https://oxygrowagrotech.com/";
 
 function generateSiteMap(products) {
   const urls =

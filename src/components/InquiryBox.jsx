@@ -25,7 +25,7 @@ const InquiryBox = ({ setIsOpenInquiry, title }) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://www.oxygrowagrotech.com/api/sendEmail",
+        "https://oxygrowagrotech.com/api/sendEmail",
         {
           subject: title,
           fullname: formData.fullName,

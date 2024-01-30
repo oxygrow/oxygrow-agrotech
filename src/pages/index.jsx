@@ -83,7 +83,7 @@ const Index = ({ products }) => {
         />
         <link
           rel="canonical"
-          href={`https://www.oxygrowagrotech.com/`}
+          href={`https://oxygrowagrotech.com/`}
           key="canonical"
         />
         <meta

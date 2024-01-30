@@ -93,7 +93,7 @@ const Category = ({ products }) => {
         <meta name="description" content={description} />
         <link
           rel="canonical"
-          href={`https://www.oxygrowagrotech.com/category/${name}`}
+          href={`https://oxygrowagrotech.com/category/${name}`}
           key="canonical"
         />
       </Head>

@@ -24,7 +24,7 @@ const contact = () => {
         />
         <link
           rel="canonical"
-          href={`https://www.oxygrowagrotech.com/contact`}
+          href={`https://oxygrowagrotech.com/contact`}
           key="canonical"
         />
       </Head>
