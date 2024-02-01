@@ -23,14 +23,12 @@ const InquiryBox = ({ setIsOpenInquiry, title }) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const url = process.env.BASE_URL || "http://localhost:3000";
-
   const handleSubmit = async (e) => {
     setIsLoading(true);
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `${url}/api/sendEmail`,
+        `https://oxygrowagrotech.com/api/sendEmail`,
         {
           subject: title,
           fullname: formData.fullName,
