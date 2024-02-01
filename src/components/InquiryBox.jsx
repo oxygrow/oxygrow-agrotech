@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { IoHappyOutline } from "react-icons/io5";
 import { ImSpinner } from "react-icons/im";
+
+import * as ga from "@/lib/ga";
+import * as fbp from "@/lib/fbp";
 const InquiryBox = ({ setIsOpenInquiry, title }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isOpenThankyouBox, setIsOpenThankyouBox] = useState(false);
@@ -20,12 +23,14 @@ const InquiryBox = ({ setIsOpenInquiry, title }) => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const url = process.env.BASE_URL || "http://localhost:3000";
+
   const handleSubmit = async (e) => {
     setIsLoading(true);
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://oxygrowagrotech.com/api/sendEmail",
+        `${url}/api/sendEmail`,
         {
           subject: title,
           fullname: formData.fullName,
@@ -41,6 +46,13 @@ const InquiryBox = ({ setIsOpenInquiry, title }) => {
       );
 
       if (data == "Success") {
+        ga.event({
+          action: "Sent Inquiry",
+          params: {
+            inquiry_for: title,
+          },
+        });
+        fbp.event("Sent Inquiry", { inquiry_for: title });
         setIsOpenThankyouBox(true);
         setIsLoading(false);
       }
