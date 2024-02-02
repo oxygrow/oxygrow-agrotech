@@ -124,8 +124,9 @@ const Product = ({ product, relatedProducts }) => {
           <div className="description-container lg:pl-10 lg:w-[50%]">
             <h1 className="primary-text lg:my-0">{product?.title}</h1>
             <p className="description-text">{product?.shortdescription}</p>
-            <div className="mb-5 text-2xl font-bold">
-              &#x20B9; {product?.price} / KG
+            <div className="items-center gap-5 mb-5 text-2xl font-bold md:flex">
+              &#x20B9; {product?.price} / KG{" "}
+              <span className="block">&#40;Prices vary by market&#41;</span>
             </div>
 
             <div className="mb-5 text-left stats">
